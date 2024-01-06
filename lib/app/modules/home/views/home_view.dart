@@ -33,25 +33,58 @@ class HomeView extends GetView<HomeController> {
             ListTile(
               title: const Text('ઇતિહાસ'),
               onTap: () {
-                Get.toNamed(Routes.HISTORY_PAGE)?.then((value) {
-                  Get.back();
-                });
+                Get.toNamed(Routes.HISTORY_PAGE);
               },
             ),
+            const Divider(),
             ListTile(
-              title: const Text('Item 2'),
-              onTap: () {},
+              title: const Text('ખોડીયાર માતાજીની લાપસી અને\nહનુમાનદાદાનો થાળ'),
+              onTap: () {
+                Get.toNamed(Routes.LAPSI_PAGE);
+              },
+            ),
+            const Divider(),
+            ListTile(
+              title: const Text('પુજારી-પરિવાર'),
+              onTap: () {
+                Get.toNamed(Routes.PUJARI_PAGE);
+              },
+            ),
+            const Divider(),
+            ListTile(
+              title: const Text('નિવેદની વિગત'),
+              onTap: () {
+                Get.toNamed(Routes.NIVED_PAGE);
+              },
+            ),
+            const Divider(),
+            ListTile(
+              title: const Text('બેંકની વિગતો(Bank Details)'),
+              onTap: () {
+                Get.toNamed(Routes.BANK_PAGE);
+              },
             ),
           ],
         ),
       ),
-      body: const Center(
-        child: Text(
-          'બોદર પરિવાર',
-          style: TextStyle(
-            fontSize: 50,
-            fontWeight: FontWeight.bold,
-          ),
+      body: Center(
+        child: Column(
+          children: [
+            const Text(
+              'બોદર પરિવાર',
+              style: TextStyle(
+                fontSize: 50,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Card(
+              child: Image.asset(
+                "assets/images/dada.jpg",
+                height: Get.height * .5,
+                fit: BoxFit.fill,
+              ),
+            ),
+          ],
         ),
       ),
     );
