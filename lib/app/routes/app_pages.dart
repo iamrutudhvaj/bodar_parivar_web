@@ -12,6 +12,8 @@ import '../modules/mandir/bindings/mandir_binding.dart';
 import '../modules/mandir/views/mandir_view.dart';
 import '../modules/nived_page/bindings/nived_page_binding.dart';
 import '../modules/nived_page/views/nived_page_view.dart';
+import '../modules/photos_peg/bindings/photos_page_binding.dart';
+import '../modules/photos_peg/views/photos_page_view.dart';
 import '../modules/pujari_page/bindings/pujari_page_binding.dart';
 import '../modules/pujari_page/views/pujari_page_view.dart';
 import '../modules/ramkatha_page/bindings/ramkatha_page_binding.dart';
@@ -85,6 +87,11 @@ class AppPages {
       name: _Paths.BANK_PAGE,
       page: () => const BankPageView(),
       binding: BankPageBinding(),
+    ),
+    GetPage(
+      name: _Paths.PHOTOS_PAGE,
+      page: () => PhotosPageView(),
+      binding: PhotosPageBinding(),
     ),
   ];
 }

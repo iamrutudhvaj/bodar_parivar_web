@@ -38,6 +38,13 @@ class HomeView extends GetView<HomeController> {
             ),
             const Divider(),
             ListTile(
+              title: const Text('ડાયરી'),
+              onTap: () {
+                Get.toNamed(Routes.PHOTOS_PAGE);
+              },
+            ),
+            const Divider(),
+            ListTile(
               title: const Text('ખોડીયાર માતાજીની લાપસી અને\nહનુમાનદાદાનો થાળ'),
               onTap: () {
                 Get.toNamed(Routes.LAPSI_PAGE);
@@ -64,6 +71,7 @@ class HomeView extends GetView<HomeController> {
                 Get.toNamed(Routes.BANK_PAGE);
               },
             ),
+            const Divider(),
           ],
         ),
       ),

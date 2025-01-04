@@ -14,6 +14,7 @@ abstract class Routes {
   static const PUJARI_PAGE = _Paths.PUJARI_PAGE;
   static const NIVED_PAGE = _Paths.NIVED_PAGE;
   static const BANK_PAGE = _Paths.BANK_PAGE;
+  static const PHOTOS_PAGE = _Paths.PHOTOS_PAGE;
 }
 
 abstract class _Paths {
@@ -29,4 +30,5 @@ abstract class _Paths {
   static const PUJARI_PAGE = '/pujari-page';
   static const NIVED_PAGE = '/nived-page';
   static const BANK_PAGE = '/bank-page';
+  static const PHOTOS_PAGE = '/photos-page';
 }
